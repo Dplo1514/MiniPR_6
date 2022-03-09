@@ -128,8 +128,6 @@ function check_dup_id() {
     });
 }
 
-<<<<<<< HEAD
-=======
 //아이디 중복확인 클라이언트
 function check_dup_id() {
     let username = $("#input-username").val()
@@ -165,8 +163,6 @@ function check_dup_id() {
     });
 }
 
->>>>>>> hyuk
-//이메일 중복확인 클라이언트
 function check_dup_email() {
     let email = $("#input-email").val()
     console.log(email)
