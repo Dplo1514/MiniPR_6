@@ -5,3 +5,4 @@ from main import app
 
 if __name__ == '__main__':  # 우리가 실행하는 서버(port = 5000)이 유일한 서버입니다.
     app.run(host='0.0.0.0', port=5001, debug=True)
+
