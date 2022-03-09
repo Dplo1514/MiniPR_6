@@ -1,7 +1,8 @@
-
-from flask import Flask , render_template , request , jsonify , session, redirect, url_for
+from flask import Flask , render_template , request , jsonify , session, redirect, url_for 
 from pymongo import MongoClient
 import certifi
+import requests
+from bs4 import BeautifulSoup
 # 회원가입/로그인
 import jwt
 import hashlib
@@ -10,7 +11,6 @@ import json
 #db 파일 불러오기
 with open('main/config.json', 'r') as f:
     config = json.load(f)
-
 secret_ID = config['DEFAULT']['ADMIN_NAME']
 secret_key = config['DEFAULT']['SECRET_KEY']
 
