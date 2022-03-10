@@ -33,9 +33,12 @@ def check_dup_id():
     exists = bool(db.users.find_one({"username": username_receive}))
     return jsonify({'result': 'success', 'exists': exists})
 
+<<<<<<< HEAD
 @blueprint.route('/check_dup_email', methods=['POST'])
 def check_dup_email():
     # 이메일 중복 확인
     email_receive = request.form['email_give']
     exists = bool(db.users.find_one({"email": email_receive}))
     return jsonify({'result': 'success', 'exists': exists})
+=======
+>>>>>>> hyuk
